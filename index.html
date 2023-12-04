@@ -1,11 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Custom fonts for this template -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+  <!-- Custom styles for this template -->
+   <link href="css/style.css" rel="stylesheet">
+
+    <title>Filip Kotanski // Front End Web Developer</title>
+</head>
+
+<body>
+  
+  <!-- navigation -->
+
+  <div class="container-fluid p-0"> 
+
+    <div class="row">
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark rounded-pill fixed-top ">
+        
+          <a class="nav-brand ms-5 text-decoration-none" href="#"><img src="./images/snow_leopard.png" alt="snow leopard" style="width:50%; min-width: 100px;"  class="rounded-circle border-0"><p style="color: coral; margin-left: 1vw; margin-top: 1vh;">Filip Kotanski</p></a>
+          
+          <button class="navbar-toggler navbar-dark bg-primary mx-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenuOffcanvas"  aria-controls="sideMenuOffcanvas" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-5">
+                <a class="nav-link fs-3" href="#about-me">About me</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link fs-3" href="#work">Work</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link fs-3" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link fs-3" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        
+      </nav>
+      
+    </div>
+
+  </div>
+
+  <!-- end navigation -->
+      
+
+  <!-- Jumbotron -->
+
+  <div class="container-fluid p-0">
+
+    <div id="Jumbotron-slide" class="carousel slide" data-bs-interval="false">
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#Jumbotron-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#Jumbotron-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#Jumbotron-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      
+      <div class="carousel-inner">
+
+        <div class="carousel-item custom-item active">
+          <img src="./images/Allalinhorn.jpg" class="d-block w-100 custom-img" alt="Allalinhorn">
+          <div class="carousel-caption d-md-block">
+            <h1 class="display-4 text-primary">Stay Connected!</h1>
+              <p class="lead text-primary fs-3 fw-bold">Join my mailing list to receive the latest updates, exclusive content, and insights into my work. Don't miss out on exciting news and opportunities!</p>
+              <hr class="my-1">
+              <p class="text-primary fs-2">Be the first to know about new projects, upcoming events, and more. Your support means the world to me!</p>
+              <a class="btn btn-primary btn-lg mb-3" href="#" role="button" data-bs-toggle="modal" data-bs-target="#signUpFormModal">Sign Up Now</a>
+          </div>
+        </div>
+
+        <div class="carousel-item custom-item">
+          <img src="./images/Mont Blanc.jpg" class="d-block w-100 custom-img" alt="Mont Blanc">
+        </div>
+
+        <div class="carousel-item custom-item">
+          <img src="./images/Zinalrothorn.jpg" class="d-block w-100 custom-img" alt="Zinalrothorn">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#Jumbotron-slide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Jumbotron-slide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- End jumbotron -->
+
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="signUpFormModal" data-bs-backdrop="static"   tabindex="-1" aria-labelledby="signUpFormModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign Up for My Mailing List</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                  <form>
+
+                      <!-- Name Field -->
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Your Name</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+
+                      <!-- Email Field -->
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email Address</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+
+                      <!-- Submit Button -->
+                      <button type="submit" class="btn btn-primary">Sign Up</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+
+                  </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Modal  -->
+
+
+  <!-- Offcanvas -->
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sideMenuOffcanvas" aria-labelledby="sideMenuOffcanvas">
+    
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fs-2 fw-bold" id="navigationMenu">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    
+    <div class="offcanvas-body">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link fs-3" href="#about-me">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-3" href="#work">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-3" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-3" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- End Offcanvas -->
+
+
+
+
+    <!-- Work  -->
+  
+  <div class="row">
+    <div class="col-md-9 offset-md-1">
+      <i class="fas fa-hammer" style="font-size: 10vh; color:coral;"></i>   <i class="ms-5" style="font-size: 10vh; color:coral; font-family:Verdana, Geneva, Tahoma, sans-serif">Work</i>
+      <hr style="height: 10px; border-radius: 5px; color: coral; background-color: coral">
+    </div>
+  </div>  
+
+  <section id="work" class="my-5">
+
+    
+
+    <!-- Cards -->
+
+    <div class="container-fluid">
+      
+      <!-- Card 1 -->
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card border-0 m-3" style="width: 75%;">
+              <a href="https://filipkotanski.github.io/portfolio-web-page/" target="_blank"><img src="./images/Matterhorn.jpg" class="card-img-top img-fluid rounded-5 m-3" alt="Matterhorn"></a>      
+          </div>
+        </div>
+        <div class="col-md-6">    
+            <div class="card-body m-3">
+              <h5 class="card-title mb-3">Responsive Portfolio Website</h5>
+              <p class="card-text">A personal portfolio website that showcases my skills.It is fully responsive, ensuring a seamless experience across various devices. It implements smooth navigation and uses modern design principles.</p>
+              <a href="#" class="btn btn-primary">Find out more</a>
+            </div>
+        </div>
+      </div>
+        
+        <!-- End card 1 -->
+  
+        <!-- Card 2 -->
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card border-0 m-3" style="width: 75%;">
+            <a href="#"><img src="./images/Alphubel.jpg" class="card-img-top img-fluid m-3 rounded-5" alt="Alphubel"></a>
+          </div>
+        </div>
+        <div class="col-md-6">    
+            <div class="card-body m-3">
+              <h5 class="card-title mb-3">E-commerce platform</h5>
+              <p class="card-text">A responsive e-commerce website that allows users to browse through different products, view details, and add items to a cart. Main focus was put on creating an intuitive user interface, smooth transitions, and an appealing design to enhance the user experience.</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+        </div>
+      </div>
+
+      <!-- End card 2 -->
+
+      <!-- Card 3 -->
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card border-0 m-3" style="width: 75%;">
+            <a href="#"> <img src="./images/Rimpfischhorn.jpg" class="card-img-top img-fluid m-3 rounded-5" alt="Rimpfischhorn"></a>
+          </div>
+        </div>
+        <div class="col-md-6">    
+            <div class="card-body m-3">
+              <h5 class="card-title mb-3">Weather App with API Integration</h5>
+              <p class="card-text">A weather application that fetches real-time weather data from a public API and allow users to search for weather conditions in different locations and display the results with visually appealing graphics. The app implements user-friendly features such as dynamic backgrounds based on weather conditions.</p>
+              <a href="#" class="btn btn-primary">Find out more</a>
+            </div>
+        </div>
+      </div>
+
+      <!-- End card 3 -->
+      
+      <!-- Card 4 -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card border-0 m-3" style="width: 75%;">
+            <a href="#"> <img src="./images/Nadelhorn.jpg" class="card-img-top img-fluid m-3 rounded-5" alt="Nadelhorn"></a>
+          </div>
+        </div>
+        <div class="col-md-6">    
+            <div class="card-body m-3">
+              <h5 class="card-title mb-3">Task Manager Application</h5>
+              <p class="card-text">A task manager application where users can add, edit, and delete tasks. It Implement features like drag-and-drop task sorting, task categorization, and due dates.</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+        </div>
+      </div>
+      <!-- End card 4 -->
+
+      <!-- Card 5 -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card border-0 m-3" style="width: 75%;">
+          <a href="#"> <img src="./images/Weissmies.jpg" class="card-img-top img-fluid m-3 rounded-5" alt="Weissmies"></a>
+          </div>
+        </div>
+        <div class="col-md-6">    
+            <div class="card-body m-3">
+              <h5 class="card-title mb-3">Interactive Data Visualization Dashboard</h5>
+              <p class="card-text">An interactive dashboard that visualizes data using charts and graphs. It utilizes charting library  Chart.js to display meaningful insights. Users benefit from features such as filtering, sorting, and dynamic updates to enhance the user's ability to explore the data.</p>
+              <a href="#" class="btn btn-primary">Go to Dashboard</a>
+            </div>
+        </div>
+      </div>
+      <!-- End card 5 -->
+
+    <!-- End cards -->
+
+    </div>
+
+  <!-- End Work  -->  
+
+  </section>
+    
+  <!-- Skills  -->
+
+  <div class="col-md-9 offset-md-1">
+    <i class="fa-solid fa-user-graduate ms-5" style="font-size: 10vh; color:coral;"></i>  <i class="fa fa-cogs ms-5" style="font-size: 10vh; color:coral;" aria-hidden="true"></i>   <i class="ms-5" style="font-size: 10vh; color:coral; font-family:Verdana, Geneva, Tahoma, sans-serif">Skills</i>
+      <hr style="height: 10px; border-radius: 5px; color: coral; background-color: coral">
+  </div>
+
+  <section id="skills" class="my-5"> 
+
+    <div class="row">
+
+      <div class="col-md-10 offset-md-1">
+
+        <div class="accordion" id="listOfSkills">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                HTML/CSS
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+              <div class="accordion-body">
+                
+                  <ul>
+                      <li>Semantic HTML</li>
+                      <li>Responsive Design</li>
+                      <li>CSS Flexbox and Grid</li>
+                      <li>CSS Preprocessors (Sass, Less)</li>
+                  </ul>
+                
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                JavaScript
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+              <div class="accordion-body">
+
+                <ul>
+                  <li>ES6+ Features</li>
+                  <li>DOM Manipulation</li>
+                  <li>AJAX and Fetch API</li>
+                  <li>Promises and Asynchronous Programming</li>
+                  <li>Event Handling</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Front-End Frameworks
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+              <div class="accordion-body">
+
+                <ul>
+                  <li>React.js</li>
+                  <li>Angular</li>
+                  <li>Vue.js</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Responsive Design
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+              <div class="accordion-body">
+
+                <ul>
+                  <li>Media Queries</li>
+                  <li>Bootstrap</li>
+                  <li>Semantic UI</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Version Control
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+              <div class="accordion-body">
+
+                <ul>
+                  <li>Git Basics</li>
+                  <li>GitHub or GitLab</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Build Tools
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+              <div class="accordion-body">
+
+                <ul>
+                  <li>Task Runners (Gulp, Grunt)</li>
+                  <li>Module Bundlers (Webpack)</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- End Skills -->
+
+  <!-- About me  -->
+
+  <div class="col-md-9 offset-md-1">
+    <i class="fa-solid fa-person-hiking ms-5" style="font-size: 10vh; color:coral;"></i><i class="ms-5" style="font-size: 10vh; color:coral; font-family:Verdana, Geneva, Tahoma, sans-serif">About me</i>
+      <hr style="height: 10px; border-radius: 5px; color: coral; background-color: coral">
+  </div> 
+
+  <section id="about-me" class="my-5">
+
+    <div class="container p-0">
+      
+      <div class="row">
+
+        <div class="col-md-8 offset-md-2 mt-5 fs-4">
+          
+          <p>
+            Hello there! I'm Filip, an aspiring web developer with a love for crafting beautiful and functional websites.
+            My journey into the world of coding began with a curiosity to bring ideas to life in the digital realm.
+          </p>
+
+          <p>
+            I thrive on turning complex problems into elegant, user-friendly solutions. Proficient in HTML, CSS, and JavaScript, 
+            I enjoy the challenge of building responsive and dynamic web applications. Whether it's designing an intuitive user interface
+            or implementing robust backend functionalities, I am dedicated to creating seamless digital experiences.
+          </p>
+
+          <p> 
+            Beyond the screen, you'll often find me chasing adventures in the mountains. I believe in the power of nature to inspire creativity and resilience.
+            Hiking, climbing, mountaineeering and capturing the breathtaking landscapes with my camera are some of my favorite ways to unwind and recharge.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- About me end  -->
+
+  <!-- Contact-->
+
+  <section class="contact-section bg-black" id="contact">
+
+    <div class="col-md-9 offset-md-1">
+      <i class="fa-solid fa-envelope ms-5" style="font-size: 10vh; color:coral;"></i><i class="ms-5" style="font-size: 10vh; color:coral; font-family:Verdana, Geneva, Tahoma, sans-serif">Contact</i>
+        <hr style="height: 10px; border-radius: 5px; color: coral; background-color: coral">
+     </div>
+
+    <div class="container p-5">
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <a href="https://www.google.com/maps/@38.5630918,-121.4813413,3a,75y,304.7h,86.36t/data=!3m6!1e1!3m4!1sMgLuD295nMUGS5X8WHnUmQ!2e0!7i16384!8i8192?authuser=0&entry=ttu" target="_blank"> <i class="fa fa-address-card" style="color: coral; font-size: 60px;"></i></a>
+              <h4 class="text-uppercase">Address</h4>
+              <div>23rd Street, Sacramento, CA</div>
+            </div>
+          </div>
+        </div> 
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <a href="mailto: filip.kotanski@gmail.com"> <i class="material-icons" style="color: coral; font-size: 55px;">email</i></a>
+              <h4 class="text-uppercase">Email</h4>
+              <div>filip.kotanski@gmail.com</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <a href="tel:+447873384462"><i class="material-icons" style="color: coral; font-size: 55px;">call</i></a>
+              <h4 class="text-uppercase">Phone</h4>
+              <div>+44 7873 384462</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="social d-flex justify-content-evenly p-3">
+        <a href="https://twitter.com/Filip_Kotanski" target="_blank">
+          <i class="fa fa-twitter-square" style="color: orangered; font-size: 55px;"></i>
+        </a>
+        <a href="https://www.facebook.com/filip.kotanski" target="_blank">
+          <i class="fa fa-facebook-square" style="color: orangered; font-size: 55px;"></i>
+        </a>
+        <a href="https://github.com/FilipKotanski" target="_blank">
+          <i class="fa fa-github-square" style="color: orangered; font-size: 55px;"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact End -->
+
+  <footer>
+    <div class="container">
+      <p>Copyright© Filip Kotanski 2023</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
+
 </html>
